@@ -1,82 +1,45 @@
 
-
-const sortByDescendingFriendCount = users => users.toSorted((userA, userB) =>
-  userB.friends.length - userA.friends.length);
+const getUserNames = users => users.map(user => user.name);
 
 
-console.log(
-  sortByDescendingFriendCount([
+  console.log(
+    getUserNames([
     {
       name: "Moore Hensley",
-      friends: ["Sharron Pace"],
-      gender: "male"
+      email: "moorehensley@indexia.com",
+      balance: 2811
     },
     {
       name: "Sharlene Bush",
-      friends: ["Briana Decker", "Sharron Pace"],
-      gender: "female"
+      email: "sharlenebush@tubesys.com",
+      balance: 3821
     },
     {
       name: "Ross Vazquez",
-      friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-      gender: "male"
+      email: "rossvazquez@xinware.com",
+      balance: 3793
     },
     {
       name: "Elma Head",
-      friends: ["Goldie Gentry", "Aisha Tran"],
-      gender: "female"
+      email: "elmahead@omatom.com",
+      balance: 2278
     },
     {
       name: "Carey Barr",
-      friends: ["Jordan Sampson", "Eddie Strong"],
-      gender: "male"
+      email: "careybarr@nurali.com",
+      balance: 3951
     },
     {
       name: "Blackburn Dotson",
-      friends: ["Jacklyn Lucas", "Linda Chapman"],
-      gender: "male"
+      email: "blackburndotson@furnigeer.com",
+      balance: 1498
     },
     {
       name: "Sheree Anthony",
-      friends: ["Goldie Gentry", "Briana Decker"],
-      gender: "female"
-    }
+      email: "shereeanthony@kog.com",
+      balance: 2764
+    },
   ])
-);
-// [
-//   {
-//     name: "Ross Vazquez",
-//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Sharlene Bush",
-//     friends: ["Briana Decker", "Sharron Pace"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Elma Head",
-//     friends: ["Goldie Gentry", "Aisha Tran"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Carey Barr",
-//     friends: ["Jordan Sampson", "Eddie Strong"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Blackburn Dotson",
-//     friends: ["Jacklyn Lucas", "Linda Chapman"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Sheree Anthony",
-//     friends: ["Goldie Gentry", "Briana Decker"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Moore Hensley",
-//     friends: ["Sharron Pace"],
-//     gender: "male"
-//   }
-// ]
+  ); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+  
+  
